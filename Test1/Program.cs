@@ -1,4 +1,4 @@
-﻿// Задача 38
+﻿// Задача 36
 // double[] NewArray (int size, int min, int max)
 //  {
 //      double[] arr = new double[size];
