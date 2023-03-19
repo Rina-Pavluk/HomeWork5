@@ -37,28 +37,78 @@
 
 // Задача 34
  
- int[] arr = new int[12];
- int k = 0, sum = 0;
- Random rnd = new Random();
- 
- Console.WriteLine("Исходный массив");
- for (int i = 0; i < 12; i++)
- {
-     arr[i] = rnd.Next(-50, 50);
-     Console.Write("{0} ", arr[i]);
- }
- Console.WriteLine();
- Console.WriteLine("Отсортированный массив ");
- Array.Sort(arr);
- 
- foreach(int element in arr)
- {
-      Console.Write("{0} ", element);
-     if (element % 2 == 0)
-     {
-         k++;
-         sum += element;
-     }
- }
- Console.WriteLine();
- Console.WriteLine("Количество четных элементов {0}, сумма четных элементов {1}", k, sum);
+// Console.WriteLine("Введите размер массива");
+// int size = Convert.ToInt32(Console.ReadLine());
+// int[] numbers = new int[size];
+// FillArrayRandomNumbers(numbers);
+// Console.WriteLine("Наш массив: ");
+// PrintArray(numbers);
+// int count = 0;
+
+// for (int j = 0; j < numbers.Length; j++)
+// if (numbers[j] % 2 == 0)
+// count++;
+
+// Console.WriteLine($"{count} четных чисел");
+
+// void FillArrayRandomNumbers(int[] numbers)
+// {
+//     for(int i = 0; i < numbers.Length; i++)
+//     {
+//         numbers[i] = new Random().Next(100,1000);
+//     }
+// }
+// void PrintArray(int[] numbers)
+// {
+//     Console.Write("[ ");
+//     for(int i = 0; i < numbers.Length; i++)
+//     {
+//         Console.Write(numbers[i] + " ");
+//     }
+//     Console.Write("]");
+//     Console.WriteLine();
+// }
+
+
+// Задача 38
+// Console.WriteLine("Введите размер массива");
+// int size = Convert.ToInt32(Console.ReadLine());
+// double[] numbers = new double[size];
+// FillArrayRandomNumbers(numbers);
+// Console.WriteLine(" Наш массив: ");
+// PrintArray(numbers);
+// double min = Int32.MaxValue;
+// double max = Int32.MinValue;
+
+// for (int k = 0; k < numbers.Length; k++)
+// {
+//     if (numbers[k] > max)
+//         {
+//             max = numbers[k];
+//         }
+//     if (numbers[k] < min)
+//         {
+//             min = numbers[k];
+//         }
+// }
+
+// Console.WriteLine($"Максимальное значение = {max}, минимальное значение = {min}");
+// Console.WriteLine($"Разница между максимальным и минимальным значением = {max - min}");
+
+// void FillArrayRandomNumbers(double[] numbers)
+// {
+//     for(int i = 0; i < numbers.Length; i++)
+//         {
+//             numbers[i] = Convert.ToDouble(new Random().Next(100,1000)) / 100;
+//         }
+// }
+// void PrintArray(double[] numbers)
+// {
+//     Console.Write("[ ");
+//     for(int i = 0; i < numbers.Length; i++)
+//         {
+//             Console.Write(numbers[i] + " ");
+//         }
+//     Console.Write("]");
+//     Console.WriteLine();
+// }
